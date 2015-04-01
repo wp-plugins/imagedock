@@ -61,7 +61,7 @@ class imagedock {
 
 	private function update_slides( $slides ) {
 		global $wpdb;
-		$slides_ids = [];
+		$slides_ids = array();
 		$sql = "INSERT INTO $this->_table_name (ID, name, images) VALUES ";
 		foreach ( $slides as $key => $slide ) {
 			$slide['ID'] = intval( sanitize_key( $key ) );
