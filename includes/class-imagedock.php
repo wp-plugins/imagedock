@@ -101,7 +101,7 @@ class imagedock {
 						$img_name = 'slides[' . intval( $slide->ID ) . '][images]';
 						$img_id = 'slides_' . intval( $slide->ID ) . '_images';
 						$images = explode( ',', $slide->images );
-						$images = empty( $images ) ? [0] : $images;
+						$images = empty( $images ) ? array(0) : $images;
 						$j = 0;
 						?>
 						<?php foreach ( $images as $image ): ?>
